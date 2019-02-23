@@ -1,9 +1,9 @@
 @echo off
 echo GTA Online Solo Public Lobby Glitch - PC
-echo 1 - Anwenden und GTA starten
-echo 2 - Anwenden
-echo 3 - RÅckgÑngig
-set /p Eingabe="Auswahl: "
+echo 1 - apply custom mtu size and run GTA
+echo 2 - apply custom mtu size
+echo 3 - revert changes
+set /p Eingabe="Selection: "
 
 if "%Eingabe%"=="1" goto 1
 if "%Eingabe%"=="2" goto 2
@@ -13,7 +13,8 @@ if "%Eingabe%"=="3" goto 3
 :1
 cls
 echo.
-set /p custom="Neuer MTU-Wert (700-900) OPTIMAL 825!!: "
+echo Try out different values and find the best for your system
+set /p custom="New mtu size (700-900) Recommended 825: "
 cls
 netsh interface ipv4 show subinterfaces
 netsh interface ipv6 show subinterfaces
@@ -37,7 +38,7 @@ exit
 :2
 cls
 echo.
-set /p custom="Neuer MTU-Wert (700-900) OPTIMAL 825!!: "
+set /p custom="New mtu size (700-900) Recommended 825: "
 cls
 netsh interface ipv4 show subinterfaces
 netsh interface ipv6 show subinterfaces
