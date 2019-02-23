@@ -1,8 +1,8 @@
 @echo off
 echo GTA Online Solo Public Lobby Glitch - PC
-echo 1 - apply custom mtu size and run GTA
-echo 2 - apply custom mtu size
-echo 3 - revert changes
+echo 1 - Apply custom mtu size and run GTA
+echo 2 - Apply custom mtu size
+echo 3 - Revert changes
 set /p Eingabe="Selection: "
 
 if "%Eingabe%"=="1" goto 1
