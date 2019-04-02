@@ -1,7 +1,7 @@
-# GTA online solo public Lobby script
+# GTA online solo public Lobby tool
 This Python script allows for a GTA Online Solo Public Lobby by changing the MTU size of the primary Ethernet adapter and renewing the ipconfig.
 
-## The Script must be run as Administrator!
+## The Tool must be run as ADMINISTRATOR!
 Tested on Windows 10
 
 # IMPORTANT!
